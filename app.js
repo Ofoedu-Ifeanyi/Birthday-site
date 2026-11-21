@@ -4,7 +4,7 @@ const barFillEl = document.getElementById("bar-fill");
 
 // The dates are 22 Nov 1999 and 22 Nov 2026 (UTC+1)
 const BIRTHDAY = new Date("2026-11-22T00:00:00+01:00").getTime();
-const START = new Date("1999-11-22T00:00:00+01:00").getTime();
+const START = new Date("2000-11-22T00:00:00+01:00").getTime();
 
 
 // --- 3. THE FADE HELPER ---
