@@ -1,0 +1,57 @@
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #faf7f2;
+  color: #1c1a17;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  position:relative;
+}
+
+/* We use this to fade screens in and out */
+.screen {
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+  transition: opacity 0.5s ease;
+}
+#countdown-screen, #reflection-screen, #closed-screen {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  transition: opacity 0.8s ease;
+  position: absolute; 
+}
+
+#timer {
+  font-size: 3rem;
+  font-weight: bold;
+  font-variant-numeric: tabular-nums; /* Keeps numbers from jumping around */
+  margin: 20px 0;
+}
+
+.bar-track {
+  width: 100%;
+  height: 12px;
+  background-color: #e8e2d8;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+#bar-fill {
+  height: 100%;
+  width: 0%; /* JS will change this */
+  background-color: #c8553d;
+  transition: width 0.5s linear; /* Makes the bar creep smoothly */
+}
+/* .photo{
+    width: 500px;
+    display: block;
+    border-radius: 5px;
+    margin: auto;
+
+} */
